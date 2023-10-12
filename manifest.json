@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Breath",
+  "description": "Extension with breath exercises",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "hello_extensions.png"
+  }
+}
