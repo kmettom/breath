@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Breath",
-  "description": "Extension with breath exercises",
-  "version": "1.0",
+  "name": "Breathe",
+  "description": "Extension with breathe exercises",
+  "version": "0.1",
   "action": {
     "default_popup": "index.html",
     "default_icon": "icon.png"

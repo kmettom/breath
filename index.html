@@ -3,21 +3,43 @@
 	<link rel="stylesheet" href="index.css">
 </head>
 <body>
-<!--<h1> Breath </h1>-->
-<div>
-	<div id="hint"></div>
-	<div id="count"></div>
-	<div id="countShape">
-		<!--		<span></span>-->
+<div class="breathe-app">
+
+	<div class="breathe-logo">
+		<img src="/icon.png"/>
 	</div>
 
-	<input type="number" value="4"/>
+	<div class="bar-wrapper">
+		<div id="bar"></div>
+		<div class=""></div>
+		<div id="hint"></div>
+		<div id="count"></div>
+	</div>
 
-	<button id="square">square</button>
-	<button id="triangle">triangle</button>
-	<button id="circle">line</button>
+	<div class="shape-section">
+
+		<div class="shape-wrapper">
+			<div id="activeShape">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</div>
+			<div class="time-setting">
+				<span id="minus">-</span>
+				<span id="currentTime">4</span>
+				<span id="plus">+</span>
+			</div>
+
+		</div>
+
+		<button id="square">square</button>
+		<button id="triangle">triangle</button>
+		<button id="circle">line</button>
+
+	</div>
 
 </div>
-<script src="breath.js"></script>
+<script src="breathe.js"></script>
 </body>
 </html>

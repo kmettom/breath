@@ -1,5 +1,3 @@
-console.log('breath init')
-
 const interval = 4
 const $hint = document.querySelector('#hint')
 const $count = document.querySelector('#count')
@@ -37,6 +35,15 @@ function countDown(_interval) {
 
 }
 
-countDown(interval)
+function initBreathe() {
+    // $hint.innerHTML = hints[currentHintIndex]
+    // $shape.classList.add(currentShape)
+    countDown(interval)
+}
+
+function initApp() {
+    
+}
+
 
 // clearInterval(cycleTimer)
