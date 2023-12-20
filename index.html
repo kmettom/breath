@@ -5,6 +5,8 @@
 <body>
 <div class="breathe-app">
 
+	<span id="testOutput"></span>
+
 	<div class="breathe-logo">
 		<img src="/icon.png"/>
 	</div>
@@ -16,10 +18,10 @@
 		<div id="count"></div>
 	</div>
 
-	<div class="shape-section">
-
-		<div class="shape-wrapper">
-			<div id="activeShape">
+	<div class="breath-type-section">
+		<div class="breath-type-wrapper">
+			<div id="activeBreathType">
+				<span id="activeBreathTypeName">
 				<span class="line"></span>
 				<span class="line"></span>
 				<span class="line"></span>
@@ -33,9 +35,9 @@
 
 		</div>
 
-		<button id="square">square</button>
-		<button id="triangle">triangle</button>
-		<button id="circle">line</button>
+		<button class="breath-type" id="square">square</button>
+		<button class="breath-type" id="triangle">triangle</button>
+		<button class="breath-type" id="line">line</button>
 
 	</div>
 

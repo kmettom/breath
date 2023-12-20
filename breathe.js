@@ -1,14 +1,41 @@
-const interval = 4
 const $hint = document.querySelector('#hint')
 const $count = document.querySelector('#count')
-const $shape = document.querySelector('#countShape')
+const $currentTime = document.querySelector('#currentTime')
+
+const $plus = document.querySelector('#plus')
+const $minus = document.querySelector('#minus')
+const $types = document.querySelectorAll('.breath-type')
+
+const $activeBreathTypeName = document.querySelector('#activeBreathTypeName')
+
+let breathType = 'line'
+let interval = 4
+
+for (let i = 0; i < $types.length; i++) {
+    $types[i].addEventListener('click', (_data) => {
+        breathType = _data.target.id
+        activeBreathTypeName.innerHTML = breathType
+    })
+}
+
+$plus.addEventListener('click', () => {
+    interval++
+    $currentTime.innerHTML = interval
+})
+
+$minus.addEventListener('click', () => {
+    interval--
+    $currentTime.innerHTML = interval
+})
 
 let hints = ['inhale', 'exhale', 'hold']
 let currentHintIndex = 0
 
-let shapes = ['line', 'triangle', 'square']
-let currentShape = 'line'
-
+let breathTypes = {
+    line: {},
+    triangle: {},
+    square: {}
+}
 let cycleTimer = null
 let countDownTimer = null
 
@@ -37,12 +64,13 @@ function countDown(_interval) {
 
 function initBreathe() {
     // $hint.innerHTML = hints[currentHintIndex]
-    // $shape.classList.add(currentShape)
     countDown(interval)
 }
 
+initBreathe()
+
 function initApp() {
-    
+
 }
 
 
