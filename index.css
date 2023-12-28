@@ -25,12 +25,24 @@ body {
     margin: 75px auto 25px;
 }
 
+#start {
+    font-size: 20px;
+}
+
+#start.active {
+    opacity: 0;
+}
+
 #bar {
     height: 30px;
-    width: 90%;
+    width: 10%;
     border-radius: 15px;
     margin: 0 auto;
     background: linear-gradient(-90deg, #6AC2E6, #B06AE6);
+}
+
+#bar.inhale {
+    width: 90%;
 }
 
 .breathe-logo {
